@@ -388,7 +388,7 @@ main {
 /* Mobile Responsive */
 @media (max-width: 480px) {
   .overlay h1 {
-    font-size: 1rem; /* Further reduce font size */
+    font-size: 1.5rem; /* Further reduce font size */
     text-align: center;
   }
 
@@ -398,7 +398,7 @@ main {
 
   .search-bar input {
     font-size: 0.8rem; /* Compact input text */
-    width: 200px;
+    width: 250px;
   }
 
   .search-icon {
