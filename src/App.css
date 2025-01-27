@@ -331,7 +331,6 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   z-index: 10;
   color: white;
 }
@@ -344,7 +343,7 @@ main {
 }
 
 .carousel-item {
-  height: 550px;
+  height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -370,10 +369,6 @@ main {
     font-size: 2rem; /* Adjust font size for tablets */
   }
 
-  .carousel-item {
-    height: 400px; /* Reduce height for better fit */
-  }
-
   .search-bar {
     width: 500px; /* Smaller width for search bar */
     height: 50px; /* Reduce height */
@@ -396,10 +391,6 @@ main {
     margin-bottom: 0.8rem;
   }
 
-  .carousel-item {
-    height: 350px; /* Adjust height for mobile */
-  }
-
   .search-bar {
     width: 100%; /* Make search bar fluid */
     height: 45px; /* Reduce height */
@@ -418,22 +409,17 @@ main {
 /* Very Small Screens */
 @media (max-width: 320px) {
   .overlay h1 {
-    font-size: 1.2rem; /* Further reduce font size */
-    margin-bottom: 0.6rem;
-  }
-
-  .carousel-item {
-    height: 300px; /* Further reduce height */
+    font-size: 1rem; /* Further reduce font size */
+    text-align: center;
   }
 
   .search-bar {
-    width: 85%; /* Compact width */
-    height: 40px; /* Compact height */
-    padding: 5px 8px; /* Smaller padding */
+    width: 100%; /* Compact width */
   }
 
   .search-bar input {
-    font-size: 0.7rem; /* Compact input text */
+    font-size: 0.8rem; /* Compact input text */
+    width: 200px;
   }
 
   .search-icon {
@@ -462,11 +448,6 @@ main {
   color: #161616;
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.place-card-tile a:hover {
-  color: #161616;
-  text-decoration: underline;
 }
 
 /* Mobile Responsive Styles */
@@ -652,7 +633,7 @@ main {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 550px;
+  min-height: 500px;
   width: 100%;
   color: white;
   display: flex;
@@ -697,9 +678,6 @@ main {
 }
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  .about-container {
-    min-height: 400px;
-  }
   .about-container h1 {
     font-size: 1.75rem;
     line-height: 36px;
@@ -724,9 +702,6 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-  .about-container {
-    min-height: 350px;
-  }
   .about-container h1 {
     font-size: 1.5rem;
     line-height: 30px;
@@ -752,7 +727,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 550px;
+  min-height: 500px;
   width: 100%;
   color: white;
   display: flex;
@@ -869,10 +844,6 @@ form button:hover {
 
 /* Tablet Responsive */
 @media screen and (max-width: 768px) {
-  .contact-container {
-    min-height: 400px;
-  }
-
   .contact-form {
     padding: 15px;
   }
@@ -885,11 +856,6 @@ form button:hover {
 
 /* Mobile Responsive */
 @media screen and (max-width: 480px) {
-  .contact-container {
-    min-height: 350px;
-    padding: 15px;
-  }
-
   .form-main-section {
     gap: 20px;
   }
@@ -911,11 +877,6 @@ form button:hover {
 
 /* Very Small Screens */
 @media screen and (max-width: 320px) {
-  .contact-container {
-    min-height: 300px;
-    padding: 10px;
-  }
-
   .form-main-section {
     gap: 15px;
   }
@@ -1003,11 +964,6 @@ form button:hover {
   padding: 10px;
 }
 
-.district-container .place-card-tile a:hover {
-  color: #161616;
-  text-decoration: underline;
-}
-
 /* Tablet Responsive */
 @media screen and (max-width: 768px) {
   .district-container .place-card {
@@ -1050,7 +1006,7 @@ form button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 550px;
+  min-height: 500px;
   width: 100%;
   color: white;
   display: flex;
@@ -1133,23 +1089,6 @@ form button:hover {
   padding: 6px 12px; /* Adjust button padding for mobile */
 }
 
-@media (max-width: 600px) {
-  .filter-form {
-    padding: 10px;
-    gap: 8px; /* Reduced gap on mobile */
-  }
-
-  .filter-select {
-    font-size: 14px; /* Adjust select font size */
-    height: 32px; /* Even smaller height on very small screens */
-  }
-
-  .clear-btn {
-    font-size: 14px; /* Adjust button font size */
-    padding: 8px 14px; /* Button padding for better touch target */
-  }
-}
-
 @media (min-width: 601px) and (max-width: 767px) {
   .filter-form {
     flex-direction: row;
@@ -1177,10 +1116,6 @@ form button:hover {
 
 /* Tablet Responsive */
 @media screen and (max-width: 768px) {
-  .explore-container {
-    min-height: 400px;
-  }
-
   .filter-form {
     flex-direction: column;
     gap: 15px;
@@ -1194,7 +1129,6 @@ form button:hover {
 /* Mobile Responsive */
 @media screen and (max-width: 480px) {
   .explore-container {
-    min-height: 350px;
     padding: 15px;
   }
 
@@ -1224,13 +1158,20 @@ form button:hover {
 /* Very Small Screens */
 @media screen and (max-width: 320px) {
   .explore-container {
-    min-height: 300px;
     padding: 10px;
   }
 
   .city-container {
     padding: 5px;
     gap: 8px;
+  }
+
+  .filter-select {
+    height: 45px;
+  }
+
+  .clear-btn {
+    margin-top: 0;
   }
 }
 

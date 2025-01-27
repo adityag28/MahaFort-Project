@@ -59,7 +59,7 @@ export default function ExploreForts() {
             ))}
           </select>
 
-          <Button variant="outline-danger" onClick={handleClear} className="clear-btn">
+          <Button variant="success" onClick={handleClear} className="clear-btn">
             Clear All
           </Button>
         </form>
