@@ -397,8 +397,8 @@ main {
   }
 
   .search-bar input {
-    font-size: 0.8rem; /* Compact input text */
-    width: 250px;
+    font-size: 1rem; /* Compact input text */
+    width: 230px;
   }
 
   .search-icon {
