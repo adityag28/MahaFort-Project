@@ -343,7 +343,7 @@ main {
 }
 
 .carousel-item {
-  height: 500px;
+  height: 550px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -387,22 +387,21 @@ main {
 /* Mobile Responsive */
 @media (max-width: 480px) {
   .overlay h1 {
-    font-size: 1.3rem; /* Smaller font for mobile */
-    margin-bottom: 0.8rem;
+    font-size: 1rem; /* Further reduce font size */
+    text-align: center;
   }
 
   .search-bar {
-    width: 100%; /* Make search bar fluid */
-    height: 45px; /* Reduce height */
-    padding: 6px 10px; /* Compact padding */
+    width: 100%; /* Compact width */
   }
 
   .search-bar input {
-    font-size: 0.8rem; /* Smaller font size */
+    font-size: 0.8rem; /* Compact input text */
+    width: 200px;
   }
 
   .search-icon {
-    font-size: 0.9rem; /* Smaller icon */
+    font-size: 0.8rem; /* Compact icon */
   }
 }
 
@@ -633,7 +632,7 @@ main {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 500px;
+  min-height: 550px;
   width: 100%;
   color: white;
   display: flex;
@@ -727,7 +726,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 500px;
+  min-height: 550px;
   width: 100%;
   color: white;
   display: flex;
@@ -1006,7 +1005,7 @@ form button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 500px;
+  min-height: 550px;
   width: 100%;
   color: white;
   display: flex;
