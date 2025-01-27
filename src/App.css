@@ -331,6 +331,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   z-index: 10;
   color: white;
 }
@@ -1136,6 +1137,9 @@ form button:hover {
     margin: 20px auto;
   }
 
+  .filter-select {
+    height: 45px;
+  }
   .filter-form button {
     width: 100%;
     margin-left: 0;
