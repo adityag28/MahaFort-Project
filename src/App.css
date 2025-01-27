@@ -397,12 +397,13 @@ main {
   }
 
   .search-bar input {
-    font-size: 1rem; /* Compact input text */
+    font-size: 1.2rem; /* Compact input text */
     width: 280px;
   }
 
   .search-icon {
     font-size: 1rem; /* Compact icon */
+    margin-left: 10px;
   }
 }
 
