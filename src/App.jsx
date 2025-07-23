@@ -137,3 +137,8 @@ function App() {
 }
 
 export default App;
+<<<<<<< HEAD
+=======
+// Dummy change to trigger git
+// Testing commit setup
+>>>>>>> 9a8f2be (Some changes)
