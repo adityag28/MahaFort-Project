@@ -26,105 +26,66 @@ function App() {
           <Route
             path='/explore'
             element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <ExploreForts />
+              <Suspense fallback={<Loading />}>
+                <ExploreForts />
               </Suspense>
             }
           />
           <Route
             path='/about'
             element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <About />
+              <Suspense fallback={<Loading />}>
+                <About />
               </Suspense>
             }
           />
           <Route
             path='/contact'
             element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <Contact />
+              <Suspense fallback={<Loading />}>
+                <Contact />
               </Suspense>
             }
           />
           <Route
             path="/district/:districtName"
             element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <DistrictPage />
+              <Suspense fallback={<Loading />}>
+                <DistrictPage />
               </Suspense>
             }
           />
           <Route
             path='/forts/:id'
             element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <FortDetails />
+              <Suspense fallback={<Loading />}>
+                <FortDetails />
               </Suspense>
             }
           >
             <Route index element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <HostFortDetails />
+              <Suspense fallback={<Loading />}>
+                <HostFortDetails />
               </Suspense>}
             />
             <Route path='architecture' element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <HostArchitectureFeatures />
+              <Suspense fallback={<Loading />}>
+                <HostArchitectureFeatures />
               </Suspense>}
             />
             <Route path='reach' element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <HostReach />
+              <Suspense fallback={<Loading />}>
+                <HostReach />
               </Suspense>}
             />
             <Route path='entry' element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <HostEntryDetails />
-              </Suspense>} />
+              <Suspense fallback={<Loading />}>
+                <HostEntryDetails />
+              </Suspense>}
+            />
             <Route path='photo' element={
-              <Suspense fallback={
-                <div className="loading-container">
-                  <span className="loader"></span>
-                  <p>Loading...</p>
-                </div>
-              }>                <HostPhotoGallery />
+              <Suspense fallback={<Loading />}>
+                <HostPhotoGallery />
               </Suspense>}
             />
           </Route>
@@ -132,13 +93,17 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter >
+    </BrowserRouter>
+  );
+}
+
+function Loading() {
+  return (
+    <div className="loading-container">
+      <span className="loader"></span>
+      <p>Loading...</p>
+    </div>
   );
 }
 
 export default App;
-<<<<<<< HEAD
-=======
-// Dummy change to trigger git
-// Testing commit setup
->>>>>>> 9a8f2be (Some changes)
