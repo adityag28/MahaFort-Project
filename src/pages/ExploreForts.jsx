@@ -69,7 +69,7 @@ export default function ExploreForts() {
           {filteredForts.length > 0 ? (
             filteredForts.slice(0, visibleForts).map(fort => (
               <Card key={fort.id} style={{ width: '24rem' }} className='place-card-tile'>
-                <Link to={`/forts/${fort.id}`}>
+<Link to={`/app/forts/${fort.id}`}>
                   <Card.Img variant="top" src={fort.image || '/assets/images/default-fort.jpg'} className='fort-img' loading="lazy" />
                   <Card.Body>
                     <Card.Title>{fort.name}</Card.Title>

@@ -51,7 +51,7 @@ export default function FortDetails() {
             <div className="fort-details-container">
                 <button
                     className="back-button"
-                    onClick={() => navigate(`/district/${districtName || fort.district}`)}
+onClick={() => navigate(`/app/district/${districtName || fort.district}`)}
                 >
                     &larr; Back to {districtName || fort.district}
                 </button>
