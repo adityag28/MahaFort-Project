@@ -55,7 +55,7 @@ export default function Forts() {
 
     const districtCards = uniqueDistricts.map((district, index) => (
         <Card key={`${district}-${index}`} style={{ width: '24rem' }} className="place-card-tile">
-            <Link to={`/district/${district}`}>
+<Link to={`/app/district/${encodeURIComponent(district)}`}>
                 <Card.Img
                     variant="top"
                     src={districtImage[district]}
