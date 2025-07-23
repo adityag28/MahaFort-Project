@@ -11,3 +11,6 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+/* Test comment to trigger a commit */
+/* Test comment to trigger a commit */
+/* Test comment to trigger a commit */
